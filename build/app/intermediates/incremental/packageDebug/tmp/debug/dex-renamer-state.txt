@@ -1,0 +1,4 @@
+#Mon Aug 17 15:37:16 IST 2020
+base.0=/home/kunal/barber/build/app/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
