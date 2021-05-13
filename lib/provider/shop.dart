@@ -25,6 +25,7 @@ class ShopItem with ChangeNotifier {
 
 class Shop with ChangeNotifier {
   List<ShopItem> _item = [
+ //example
 //    ShopItem(
 //      id: 'b1',
 //      title: 'Barber 1',
@@ -32,38 +33,6 @@ class Shop with ChangeNotifier {
 //      imageUrl: 'https://www.thetrendspotter.net/wp-content/uploads/2020/03/Best-Barbershops-in-Perth.jpg',
 //      shopOpenTime: TimeOfDay(hour: 09, minute: 00),
 //      shopCloseTime: TimeOfDay(hour: 21, minute: 30),
-//    ),
-//    ShopItem(
-//      id: 'b2',
-//      title: 'Barber 2',
-//      location: 'Bhopal',
-//      imageUrl: 'https://www.thetrendspotter.net/wp-content/uploads/2020/03/Best-Barbershops-in-Perth.jpg',
-//      shopOpenTime: TimeOfDay(hour: 09, minute: 00),
-//      shopCloseTime: TimeOfDay(hour: 21, minute: 30),
-//    ),
-//    ShopItem(
-//      id: 'b3',
-//      title: 'Barber 3',
-//      location: 'Mandsore',
-//      imageUrl: 'https://www.thetrendspotter.net/wp-content/uploads/2020/03/Best-Barbershops-in-Perth.jpg',
-//      shopOpenTime: TimeOfDay(hour: 09, minute: 00),
-//      shopCloseTime: TimeOfDay(hour: 21, minute: 30),
-//    ),
-//    ShopItem(
-//      id: 'b4',
-//      title: 'Barber 4',
-//      location: 'Indore',
-//      imageUrl: 'https://www.thetrendspotter.net/wp-content/uploads/2020/03/Best-Barbershops-in-Perth.jpg',
-//      shopOpenTime: TimeOfDay(hour: 09, minute: 00),
-//      shopCloseTime: TimeOfDay(hour: 21, minute: 30),
-//    ),
-//    ShopItem(
-//      id: 'b5',
-//      title: 'Barber 5',
-//      location: 'Indore',
-//      imageUrl: 'https://www.thetrendspotter.net/wp-content/uploads/2020/03/Best-Barbershops-in-Perth.jpg',
-//      shopOpenTime: TimeOfDay(hour: 10, minute: 00),
-//      shopCloseTime: TimeOfDay(hour: 20, minute: 30),
 //    ),
   ];
 
@@ -100,7 +69,6 @@ class Shop with ChangeNotifier {
     var closeMinute = shopItem.shopCloseTime.minute;
     var openHour = shopItem.shopOpenTime.hour;
     var openMinute = shopItem.shopOpenTime.minute;
-//print(shopItem.shopOpenTime.runtimeType);
     var hour = openHour;
     var minutes = openMinute;
     while (hour <= closeHour) {
@@ -111,7 +79,6 @@ class Shop with ChangeNotifier {
         minutes = 0;
       }
     }
-//    _list.removeWhere((element) => element == "12:30");
     return "${_list[index].replaceAll(':0', ':00')} - ${_list[index + 1].replaceAll(':0', ':00')}";
   }
 
